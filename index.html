@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Работа с сетью и DOM</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script type="module" src="src/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Блог JSONPlaceholder</h1>
+      <nav id="authors"></nav>
+    </header>
+
+    <main id="posts"></main>
+
+    <footer>
+      <p>© 2025 Галлямов Максим ПИ-232</p>
+    </footer>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-body"></p>
+        <h3>Комментарии:</h3>
+        <ul id="modal-comments"></ul>
+      </div>
+    </div>
+  </body>
+</html>
