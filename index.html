@@ -10,8 +10,35 @@
   <body>
     <header>
       <h1>Блог JSONPlaceholder</h1>
+      <p id="reload-counter">Количество загрузок: <span id="counter-value">0</span></p>
       <nav id="authors"></nav>
+      <div>
+        <input type="radio" id="light-theme" name="theme">
+        <label for="light-theme">Светлая тема</label>
+        <input type="radio" id="dark-theme" name="theme">
+        <label for="dark-theme">Темная тема</label>
+      </div>
     </header>
+
+    <section id="create-post">
+      <h2>Создать пост</h2>
+      <form id="postForm">
+        <label>Название поста:</label>
+        <input type="text" name="title" required>
+
+        <label>Текст поста:</label>
+        <textarea name="body" required></textarea>
+
+        <label>Автор:</label>
+        <select name="userId" id="userSelect" required></select>
+
+        <button type="submit">Добавить пост</button>
+      </form>
+    </section>  
+    <div id="view-mode">
+      <button id="tile-view">Плитка</button>
+      <button id="list-view">Список</button>
+    </div>
 
     <main id="posts"></main>
 
